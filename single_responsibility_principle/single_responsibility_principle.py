@@ -1,4 +1,5 @@
 """
+https://www.youtube.com/watch?v=uNLNQKGojc8
 The single-responsibility principle states that:
 
 A class should have only one reason to change.
@@ -24,11 +25,13 @@ If a class takes care of more than one task, then you should separate those task
 # now this here is breaking the rule of single responsibility principle beacuse this class encapsulated with the 
 # different method of the different funcationality which cater to different actor.
 
-# In single responsibilty principle that ccode you are writing if that code changes from one actor or group of actor 
+# In single responsibilty principle that code you are writing if that code changes from one actor or group of actor 
 # which fulfil one business requirement till that point it is fine
 
 # so, best solution for this, breaking down one class to multiple class with one business functionality without 
 # breaking any exiting functionality
+# benefit of using SRP: is improved code clarity, easier maintenance, better testability, and reduced risk of introducing bugs 
+# when making changes, as each class handles only one specific responsibility.
 
 class Employee:
     
