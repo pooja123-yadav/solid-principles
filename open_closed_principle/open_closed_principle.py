@@ -39,6 +39,21 @@ class Square(Shape):
     def calculate_area(self):
         return self.side**2
 
+class AreaCalculator:
+    def calculate_area(self, shape: Shape):
+        return shape.calculate_area()
+
+rect = Rectangle(5, 10)
+circle = Circle(7)
+triangle = Square(6)
+
+calculator = AreaCalculator()
+print("Rectangle Area:", calculator.calculate_area(rect))      # 50
+print("Circle Area:", calculator.calculate_area(circle))        # 153.86
+print("Triangle Area:", calculator.calculate_area(triangle))    # 24.0
+
+
+
 """
  This update closes the class to modifications. Now you can add new shapes to your class design without
  the need to modify Shape. In every case, you’ll have to implement the required interface, which also 
