@@ -5,7 +5,8 @@ Clients should not be forced to depend upon methods that they do not use. Interf
  not to hierarchies.
 
 In this case, clients are classes and subclasses, and interfaces consist of methods and attributes.
-In other words, if a class doesn’t use particular methods or attributes, then those methods and attributes should be segregated into more specific classes.
+In other words, if a class doesn’t use particular methods or attributes, then those methods and attributes 
+should be segregated into more specific classes.
 
 """
 
